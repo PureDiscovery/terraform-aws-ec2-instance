@@ -34,13 +34,10 @@ resource "aws_instance" "this" {
 
   ebs_optimized = var.ebs_optimized
 
-  dynamic "lifecycle" {
-    for_each = var.ignore_tag_changes ? [1] : []
-    content {
-      ignore_changes = [
-        tags,
-      ]
-    }
+  lifecycle {
+    ignore_changes = [
+      tags,
+    ]
   }
 
   dynamic "capacity_reservation_specification" {

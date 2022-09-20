@@ -316,3 +316,9 @@ variable "putin_khuylo" {
   type        = bool
   default     = true
 }
+
+variable "ignore_tag_changes" {
+  description = "Should tag changes be ignored?"
+  type = bool
+  default = false
+}

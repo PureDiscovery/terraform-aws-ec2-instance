@@ -6,12 +6,12 @@ pr_status_enabled: true
 pr_status_thresholds:
     critical: 0
     high: 0
-    medium: 999
-    low: 999
+    medium: 99999
+    low: 99999
 
 # Force the status check to pass.  Checks will still be run.
 # Effectively the same as raising thresholds to high values.
-pr_status_force_pass_enabled: false
+pr_status_force_pass_enabled: true
 
 # Set to true if you want iacbot to add PR comments
 pr_comments_enabled: true

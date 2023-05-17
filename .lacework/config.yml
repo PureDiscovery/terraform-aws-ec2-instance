@@ -26,6 +26,3 @@ scan_git_submodules_enabled: true
 
 ignore:
   - "../**/examples/*" # This is just a ref. code, we don't want to run it through lacework IaC scan
-
-suppress:
-  -  "ckv-aws-88" # This is a false positive, we don't want to see it in the report

@@ -26,3 +26,5 @@ scan_git_submodules_enabled: false
 
 ignore:
   - "**/examples/**" # This is just a ref. code, we don't want to run it through lacework IaC scan
+  - "examples/**" # This is just a ref. code, we don't want to run it through lacework IaC scan
+  - "/examples/**" # This is just a ref. code, we don't want to run it through lacework IaC scan

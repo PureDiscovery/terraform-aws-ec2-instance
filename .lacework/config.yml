@@ -25,5 +25,5 @@ pr_comments_on_passed_check_enabled: true
 scan_git_submodules_enabled: true
 
 ignore:
-  - "/examples/**" # This is just a ref. code, we don't want to run it through lacework IaC scan
   - "examples/**" # This is just a ref. code, we don't want to run it through lacework IaC scan
+  - "/examples/**" # This is just a ref. code, we don't want to run it through lacework IaC scan
